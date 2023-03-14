@@ -67,6 +67,14 @@ Làm từ tổng quan đến chi tiết
     height: 46px;
     background-color: #000;
     
+    
+}
+
+#Header .mobile-menu-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
 }
 
 #nav {
@@ -90,7 +98,7 @@ Làm từ tổng quan đến chi tiết
 }
 
 #nav li a {
-    display: inline-block;
+    display: block;
     
     text-decoration: none;
     line-height: 46px;
@@ -129,16 +137,25 @@ Làm từ tổng quan đến chi tiết
 #nav .nav-arrow-down {
     font-size: 14px;
 }
-
+#Header .menu-icon,
 #Header .search-icon {
+    
     font-size: 20px;
     color: #fff;
     line-height: 46px;
 }
 
+#Header .mobile-menu-btn,
 #Header .search-btn {
     float: right;
     padding: 0 24px;
+}
+
+#Header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+#Header .mobile-menu-btn:hover{
+    background-color: #ccc;
 }
 
 #Header .search-btn:hover {
@@ -152,7 +169,7 @@ Làm từ tổng quan đến chi tiết
     position: relative;
     padding-top: 50%;
     margin-top: 46px;
-    background: url(/assets/img/dbsk.jpeg) top center / cover no-repeat;
+    background: url(/assets/img/chicago.png) top center / cover no-repeat;
     
 }
 
@@ -185,6 +202,7 @@ Làm từ tổng quan đến chi tiết
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
